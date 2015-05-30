@@ -1,0 +1,30 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>autorun-test</title>
+</head>
+
+<body>
+  <h1>Welcome to AutoRun Test</h1>
+  {{> buttons}}
+  <hr>
+  {{> votes}}
+</body>
+
+<template name="votes">
+  <div id="votes">
+    {{#each vote}}
+        {{party}} {{votes}} <br>
+    {{/each}}
+
+  </div>
+</template>
+
+<template name="buttons">
+    {{#each parties}}
+      <span>{{> button}}</span>
+    {{/each}}
+</template>
+
+<template name="button">
+  <a href="#" class="{{getButtonClass this.party}}">{{this.party}}</a>
+</template>
