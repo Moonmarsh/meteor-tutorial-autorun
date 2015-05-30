@@ -6,7 +6,7 @@ Polls = {
       {party:"Liberal"},
       {party:"Labor"},
       {party: "Green"},
-      {party: "Thinkers"}
+      {party: "Sundried Red Tomato Party"}
     ];
 
     _.each(votes, function(r){
